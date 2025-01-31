@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TvCell" rowHeight="76" id="Kki-tD-fn0" customClass="TvCell" customModule="FireBaseDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kki-tD-fn0" id="Udj-aG-A5g">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGI-5x-ehL">
+                        <rect key="frame" x="20" y="48" width="299" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uI8-nJ-gbm">
+                        <rect key="frame" x="20" y="9.9999999999999982" width="299" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                <constraints>
+                    <constraint firstItem="TGI-5x-ehL" firstAttribute="top" secondItem="uI8-nJ-gbm" secondAttribute="bottom" constant="17.666666666666671" id="2wg-aA-Edt"/>
+                    <constraint firstAttribute="trailing" secondItem="uI8-nJ-gbm" secondAttribute="trailing" constant="20" id="K8I-gf-lJ5"/>
+                    <constraint firstItem="uI8-nJ-gbm" firstAttribute="leading" secondItem="Udj-aG-A5g" secondAttribute="leading" constant="20" id="Q08-CY-ZZd"/>
+                    <constraint firstItem="TGI-5x-ehL" firstAttribute="trailing" secondItem="uI8-nJ-gbm" secondAttribute="trailing" id="Vfu-c6-rIM"/>
+                    <constraint firstItem="TGI-5x-ehL" firstAttribute="leading" secondItem="uI8-nJ-gbm" secondAttribute="leading" id="mm1-m4-K8I"/>
+                    <constraint firstAttribute="bottom" secondItem="TGI-5x-ehL" secondAttribute="bottom" constant="10" id="oQA-kT-Stn"/>
+                    <constraint firstItem="uI8-nJ-gbm" firstAttribute="top" secondItem="Udj-aG-A5g" secondAttribute="top" constant="10" id="uEP-3r-8T7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="ih6-My-Riw"/>
+            <connections>
+                <outlet property="lblKey" destination="uI8-nJ-gbm" id="ksW-6h-vyF"/>
+                <outlet property="lblValue" destination="TGI-5x-ehL" id="Ik4-GN-yY7"/>
+            </connections>
+            <point key="canvasLocation" x="146" y="-77"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
