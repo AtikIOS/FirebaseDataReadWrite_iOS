@@ -16,6 +16,8 @@ protocol Datapass : AnyObject {
 
 class PreviewController: UIViewController {
     
+    // MARK: - Outlets
+
     @IBOutlet weak var tableView: UITableView!
     
     private let database = Database.database().reference()
